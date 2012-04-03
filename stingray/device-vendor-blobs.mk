@@ -111,6 +111,7 @@ PRODUCT_PACKAGES += \
     MotoSimUiHelper \
     StingrayProgramMenu \
     StingrayProgramMenuSystem \
+    UsbHelper \
     VZWAPNLib \
     VZWAPNService
 
