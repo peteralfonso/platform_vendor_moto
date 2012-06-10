@@ -54,6 +54,9 @@ PRODUCT_COPY_FILES += \
     vendor/moto/stingray/proprietary/suplcerts.bks:system/etc/security/suplcerts.bks \
     vendor/moto/stingray/proprietary/voip_aud_params.bin:system/etc/voip_aud_params.bin \
     vendor/moto/stingray/proprietary/bcm4329.cal:system/etc/wifi/bcm4329.cal \
+    vendor/moto/stingray/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
+    vendor/moto/stingray/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
+    vendor/moto/stingray/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
     vendor/moto/stingray/proprietary/libEGL_perfhud.so:system/lib/egl/libEGL_perfhud.so \
     vendor/moto/stingray/proprietary/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
     vendor/moto/stingray/proprietary/libGLESv1_CM_perfhud.so:system/lib/egl/libGLESv1_CM_perfhud.so \
@@ -65,6 +68,8 @@ PRODUCT_COPY_FILES += \
     vendor/moto/stingray/proprietary/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     vendor/moto/stingray/proprietary/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
     vendor/moto/stingray/proprietary/libcgdrv.so:system/lib/libcgdrv.so \
+    vendor/moto/stingray/proprietary/libdmengine.so:system/lib/libdmengine.so \
+    vendor/moto/stingray/proprietary/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
     vendor/moto/stingray/proprietary/libims_client_jni.so:system/lib/libims_client_jni.so \
     vendor/moto/stingray/proprietary/libmoto_ecnswrapper.so:system/lib/libmoto_ecnswrapper.so \
     vendor/moto/stingray/proprietary/libmoto_lte_ril.so:system/lib/libmoto_lte_ril.so \
@@ -104,6 +109,8 @@ PRODUCT_COPY_FILES += \
 # All the apks necessary for stingray
 PRODUCT_PACKAGES += \
     AppDirectedSmsService \
+    ConnMO \
+    DMService \
     MotoImsServer \
     MotoLocationProxy \
     MotoLteTelephony \
